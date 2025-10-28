@@ -1,5 +1,10 @@
 import fastify from 'fastify'
-import { serializerCompiler, validatorCompiler, jsonSchemaTransform, ZodTypeProvider  } from 'fastify-type-provider-zod'
+import {
+  serializerCompiler,
+  validatorCompiler,
+  jsonSchemaTransform,
+  ZodTypeProvider,
+} from 'fastify-type-provider-zod'
 import { fastifyCors } from '@fastify/cors'
 import { fastifySwagger } from '@fastify/swagger'
 import ScalarApiReference from '@scalar/fastify-api-reference'
@@ -40,5 +45,7 @@ app
   })
   .then(() => {
     console.log('Server running on http://localhost:' + env.PORT)
-    console.log('API Reference running on http://localhost:' + env.PORT + '/docs')
-  }) 
+    console.log(
+      'API Reference running on http://localhost:' + env.PORT + '/docs',
+    )
+  })
