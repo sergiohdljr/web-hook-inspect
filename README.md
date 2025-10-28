@@ -179,10 +179,3 @@ webhook-inspect/
 - Use `pnpm db:studio` to visually inspect your database
 - API documentation is automatically generated and available at `/docs`
 
-## 📝 License
-
-ISC
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
