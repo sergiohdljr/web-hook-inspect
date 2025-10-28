@@ -1,0 +1,12 @@
+services:
+  postgres:
+    container_name: webhook-inspect-postgres
+    image: postgres:17
+    environment:
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: webhook-inspect
+    ports:
+      - "5432:5432"
+    
+    
