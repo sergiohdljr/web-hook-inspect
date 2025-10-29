@@ -1,0 +1,1 @@
+ALTER TABLE "webhooks" ADD COLUMN "pathname" text NOT NULL;
