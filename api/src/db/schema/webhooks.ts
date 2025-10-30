@@ -3,7 +3,7 @@ import { pgTable, text, timestamp, jsonb } from 'drizzle-orm/pg-core'
 import { uuidv7 } from 'uuidv7'
 
 export const webhooks = pgTable('webhooks', {
-  id: text('id')
+  id: text()
     .primaryKey()
     .$defaultFn(() => uuidv7()),
   method: text().notNull(),
